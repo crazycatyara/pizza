@@ -164,3 +164,31 @@
 .catalog-nav__btn:last-of-type .catalog-nav__btn {
 	border-right: 0;
 }
+@media (max-width: 767px) {
+	.catalog__nav {
+		width: 500px;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.catalog-nav__wrapper {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.catalog-nav-item {
+		width: 50%;
+		flex-grow: 1;
+	}
+	.catalog-nav__btn {
+		min-width: 0;
+		width: 100%;
+		border-top: 1px solid #e5e5e5;
+	}
+	.catalog-nav__btn:nth-of-type(1) .catalog-nav__btn,
+	.catalog-nav__btn:nth-of-type(2) .catalog-nav__btn {
+		border-top: 0;
+	}
+
+	.catalog-nav__btn: nth-of-type(even) .catalog-nav__btn {
+		border-right: 0;
+	}
+}
