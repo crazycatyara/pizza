@@ -144,6 +144,7 @@ body {
 
 .header-page__text {
 	position: relative;
+	transition: color 0.2s;
 }
 
 .header-page__hamburger {
