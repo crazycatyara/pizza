@@ -153,6 +153,7 @@
 .catalog-nav__btn.is-active {
 	background: #1f1f1f;
 	color: #fff;
+	background-color: #1f1f1f;
 }
 
 .catalog-nav__btn:not(.is-active):hover {
