@@ -352,39 +352,117 @@
 		font-size: 18px;
 	}
 }
-.contacts{
+.section-contacts__container {
+	position: relative;
+}
+.section-contacts__container::before {
+	content: "";
+	position: absolute;
+	background: url(../img/section-contacts/cat.png) no-repeat;
+	background-size: cover;
+	height: 472px;
+	width: 297px;
+	z-index: -3;
+}
+
+.contacts {
 	display: flex;
 	align-items: center;
+	position: relative;
+	flex-wrap: wrap;
 }
-.contacts__start{
+.contacts__start {
 	width: 50%;
 }
-.contacts__end{
+.contacts__end {
 	width: 50%;
 	padding-left: 30px;
 }
-.contacts__map{
+.contacts__map {
 	height: 450px;
 	background: #fef0b4;
 }
-.contacts__item{
+.contacts__item {
 	margin-bottom: 35px;
 }
-.contacts__title{
+.contacts__title {
 	margin: 0 0 5px;
 	font-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	font-weight: 900;
 }
-.contacts__text{
+.contacts__text {
 	margin: 0;
 	font-size: 18px;
 }
-.contacts__phone{
+.contacts__phone {
 	color: inherit;
 	text-decoration: none;
-	transition: color .2s;
+	transition: color 0.2s;
 }
-.contacts__phone:hover{
-color: #ffa650;
+.contacts__phone:hover {
+	color: #ffa650;
+}
+.socials {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.socials__item {
+	margin-right: 7px;
+}
+.socials__link {
+	display: inline-block;
+}
+.socials__icon {
+	fill: rgb(0, 0, 0);
+	transition: fill 0.2s opacity 0.2s;
+	width: 35px;
+	height: 35px;
+}
+.socials__icon:active {
+	opacity: 0.7;
+}
+.socials__logo {
+	fill: rgb(252, 252, 252);
+}
+.socials__icon--vk:hover {
+	fill: rgb(39, 70, 207);
+}
+@media (max-width: 992px) {
+	.contacts__map {
+		height: 350px;
+	}
+	.section-contacts__container::before {
+		height: 350px;
+	}
+}
+
+@media (max-width: 767px) {
+	.contacts__start {
+		width: 100%;
+		order: 1;
+	}
+	.contacts__map {
+		margin: 0 -20px;
+	}
+	.section-contacts__container::before {
+		height: 350px;
+		right: 1px;
+		top: 290px;
+	}
+	.contacts__end {
+		width: 100%;
+		margin-bottom: 40px;
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 642px) and (min-width: 577px) {
+	.section-contacts__container::before {
+		height: 350px;
+		right: 1px;
+		top: 315px;
+	}
 }
