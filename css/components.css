@@ -390,7 +390,7 @@
 .contacts__map {
 	height: 450px;
 	background: #fef0b4;
-	
+	border: 8px solid #fef0b4;
 }
 .contacts__item {
 	margin-bottom: 35px;
