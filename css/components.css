@@ -459,6 +459,8 @@
 	}
 	.contacts__map {
 		margin: 0 -20px;
+		border-left: none;
+		border-right: none;
 	}
 	.section-contacts__container::before {
 		height: 350px;
